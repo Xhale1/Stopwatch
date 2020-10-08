@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.1.0] - 2020-01-30
+~Fully rewrote layout code. This should fix layout problems on iPads and improve compatibility with future devices
+
+~Reduced memory footprint
+
+~General performance improvements
+
+Source code is now fully open source :)
+
 ## [3.0.0] - 2020-01-15
 Huge thanks to Mark Rober for using this app in one of his videos, it was pretty cool to stumble upon that.
 

@@ -8,23 +8,35 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let timeLabel = UILabel()
-    let secondsLabel = UILabel()
-    let startStopButton = UIButton()
-    var lapResetButton = UIButton()
+class ViewController: UIViewController {
     
+    ///Label responsible for displaying the main timer
+    let primaryTimeLabel = UILabel()
+    ///Label responsible for displaying the time relative to the units
+    let secondaryTimeLabel = UILabel()
+    ///Button that switches between starting and stopping the timer
+    let startStopButton = UIButton()
+    ///Button that switches between adding a lap and reseting the timer
+    let lapResetButton = UIButton(type: .system)
+    
+    
+    
+    ///Date when the timer first began. Used to calculate the total time elapsed
     var methodStart = Date()
+    ///Time responsible for refreshing the labels
     var timer = Timer()
+    ///Total time elapsed since the time started, minus any time it was paused
     var exTime: TimeInterval!
-    var prevTime = 0.0
     
     let screenSize: CGRect = UIScreen.main.bounds
     
-    var tableView = UITableView()
+    ///TableView responsible for displaying laps
+    var lapsTableView = UITableView()
+    ///Switcher for changing how the lap table displays data
+    var lapSegment = UISegmentedControl()
     
+    ///Array containing lap data. Every item is a double representing the total time elapsed since the timer began, while lap time is claculated from the same array.
     var lapsTotal: [Double] = []
-    var lapsPrev: [Double] = []
     
     enum unitTypes {
         case seconds
@@ -32,130 +44,151 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case hours
     }
     
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
-    override var prefersHomeIndicatorAutoHidden: Bool {
-        return true
-    }
-    
+    ///Units that the secondary time label should be displayed in
     var unitType = unitTypes.seconds
-    
+    ///Returns true if lap-related views are visible, and false if they are not
+    var isLapViewVisible = false
+}
+
+extension ViewController {
     func buildView() {
         UserDefaults.standard.set(false, forKey: "isRunning")
         
         self.view.backgroundColor = UIColor.secondarySystemBackground
         
-        var topBuffer = 30
-        var timeBGHeight = 120
-        var lapHeight = 180
-        var timeFontSize = 64
-        
-        print(screenSize.height)
-        
-        //1080 is iPad 7
-        
-        if screenSize.height >= 1024 { //iPad Pro 9.7
-            topBuffer = 120
-            timeBGHeight = 130
-            lapHeight = 350
+        var timeFontSize: CGFloat
+
+        if UIDevice.current.userInterfaceIdiom == .pad {
             timeFontSize = 72
-        } else if screenSize.height >= 812 { //iPhone 11 Pro
-            topBuffer = 80
-            timeBGHeight = 130
-            lapHeight = 230
-            timeFontSize = 72
+        } else {
+            timeFontSize = 64
         }
         
-        let timerBG = UIView(frame: CGRect(x: 0, y: topBuffer, width: Int(screenSize.width), height: timeBGHeight))
+        let timerBG = UIView()
         timerBG.backgroundColor = UIColor.systemBackground
         timerBG.layer.borderWidth = 0.5
         timerBG.layer.borderColor = UIColor.separator.cgColor
-        self.view.addSubview(timerBG)
+        view.addSubview(timerBG)
+        timerBG.translatesAutoresizingMaskIntoConstraints = false
         
         
         
-        timeLabel.textAlignment = .center
-        timeLabel.font = UIFont.monospacedDigitSystemFont(ofSize: CGFloat(timeFontSize), weight: .medium)
-        timeLabel.textColor = UIColor.label
-        timeLabel.text = "00:00:00"
-        timeLabel.sizeToFit()
-        timeLabel.frame = CGRect(x: 0, y: 0, width: screenSize.width, height: timeLabel.frame.size.height)
-        timeLabel.center.x = timerBG.center.x
-        timerBG.addSubview(timeLabel)
+        primaryTimeLabel.textAlignment = .center
+        primaryTimeLabel.font = UIFont.monospacedDigitSystemFont(ofSize: timeFontSize, weight: .medium)
+        primaryTimeLabel.text = "00:00:00"
+        primaryTimeLabel.textColor = UIColor.label
+        timerBG.addSubview(primaryTimeLabel)
+        primaryTimeLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            primaryTimeLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: screenSize.height * 0.05),
+            primaryTimeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            primaryTimeLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
         
-        secondsLabel.textAlignment = .center
-        secondsLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 24, weight: .regular)
-        secondsLabel.textColor = UIColor.secondaryLabel
-        secondsLabel.text = "0.000000"
-        secondsLabel.sizeToFit()
-        secondsLabel.frame = CGRect(x: 0, y: 0, width: screenSize.width, height: secondsLabel.frame.size.height)
-        secondsLabel.center.x = timerBG.center.x
-        timerBG.addSubview(secondsLabel)
+        secondaryTimeLabel.textAlignment = .center
+        secondaryTimeLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 24, weight: .regular)
+        secondaryTimeLabel.textColor = UIColor.secondaryLabel
+        secondaryTimeLabel.text = "0.000000"
+        timerBG.addSubview(secondaryTimeLabel)
+        secondaryTimeLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            secondaryTimeLabel.topAnchor.constraint(equalTo: primaryTimeLabel.bottomAnchor),
+            secondaryTimeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            secondaryTimeLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
         
-        let labelHeight = timeLabel.frame.size.height + secondsLabel.frame.size.height
-        
-        timeLabel.center.y = (timerBG.frame.size.height - labelHeight) / 2 + (timeLabel.frame.size.height / 2)
-        secondsLabel.center.y = timeLabel.frame.origin.y + timeLabel.frame.size.height + (secondsLabel.frame.size.height / 2)
-        
-        
+        NSLayoutConstraint.activate([
+            timerBG.topAnchor.constraint(equalTo: primaryTimeLabel.topAnchor, constant: -15),
+            timerBG.bottomAnchor.constraint(equalTo: secondaryTimeLabel.bottomAnchor, constant: 15),
+            timerBG.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            timerBG.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
         
         let units = ["Seconds" , "Minutes", "Hours"]
         let unitSegment = UISegmentedControl(items: units)
-        unitSegment.center = CGPoint(x: self.view.center.x, y: timerBG.frame.origin.y + timerBG.frame.size.height + (unitSegment.frame.size.height/2) + 20)
         unitSegment.selectedSegmentIndex = 0
         unitSegment.addTarget(self, action: #selector(unitsChanged(sender:)), for: .valueChanged)
-
-        self.view.addSubview(unitSegment)
+        view.addSubview(unitSegment)
+        unitSegment.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            unitSegment.topAnchor.constraint(equalTo: timerBG.bottomAnchor, constant: 20),
+            unitSegment.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
         
         
         
-        tableView = UITableView(frame: CGRect(x: 0, y: Int(unitSegment.frame.origin.y + unitSegment.frame.size.height + 20), width: Int(screenSize.width), height: lapHeight))
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        tableView.layer.borderWidth = 0.5
-        tableView.layer.borderColor = UIColor.separator.cgColor
-        tableView.dataSource=self
-        tableView.delegate=self
-        tableView.reloadData()
-        
-        self.view.addSubview(tableView)
+        lapsTableView = UITableView()
+        lapsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        lapsTableView.layer.borderWidth = 0.5
+        lapsTableView.layer.borderColor = UIColor.separator.cgColor
+        lapsTableView.dataSource=self
+        lapsTableView.delegate=self
+        view.addSubview(lapsTableView)
+        lapsTableView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            lapsTableView.topAnchor.constraint(greaterThanOrEqualTo: unitSegment.bottomAnchor, constant: 20),
+            lapsTableView.topAnchor.constraint(lessThanOrEqualTo: unitSegment.bottomAnchor, constant: 120),
+            lapsTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            lapsTableView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.25),
+            lapsTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+        lapsTableView.alpha = 0
         
         let lapOptions = ["Total Time" , "Lap Time"]
-        let lapSegment = UISegmentedControl(items: lapOptions)
-        lapSegment.center = CGPoint(x: self.view.center.x, y: tableView.frame.origin.y + tableView.frame.size.height + (unitSegment.frame.size.height/2) + 20)
+        lapSegment = UISegmentedControl(items: lapOptions)
         lapSegment.selectedSegmentIndex = UserDefaults.standard.integer(forKey: "lapIndex")
         lapSegment.addTarget(self, action: #selector(lapOptionChanged(sender:)), for: .valueChanged)
-
-        self.view.addSubview(lapSegment)
+        
+        view.addSubview(lapSegment)
+        lapSegment.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            lapSegment.topAnchor.constraint(equalTo: lapsTableView.bottomAnchor, constant: 20),
+            lapSegment.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
+        lapSegment.alpha = 0
         
         
         
-        lapResetButton = UIButton(type: .system)
-        lapResetButton.frame = CGRect(x: 0, y: 0, width: screenSize.width, height: 50)
         lapResetButton.setTitle("Add Lap", for: .normal)
         lapResetButton.titleLabel?.font = UIFont.systemFont(ofSize: 24, weight: .medium)
         lapResetButton.addTarget(self, action: #selector(lapReset), for: .touchUpInside)
-        lapResetButton.center = CGPoint(x: self.view.center.x, y: lapSegment.frame.origin.y + lapSegment.frame.size.height + (lapResetButton.frame.size.height/2))
         lapResetButton.isHidden = true
         
-        self.view.addSubview(lapResetButton)
+        view.addSubview(lapResetButton)
+        lapResetButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            lapResetButton.topAnchor.constraint(equalTo: lapSegment.bottomAnchor, constant: 20),
+            lapResetButton.heightAnchor.constraint(equalToConstant: 50),
+            lapResetButton.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            lapResetButton.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
         
         
         
         startStopButton.backgroundColor = UIColor.systemGray5
-        startStopButton.translatesAutoresizingMaskIntoConstraints = false
         startStopButton.setTitle("Start", for: .normal)
         startStopButton.setTitleColor(UIColor.label, for: .normal)
         startStopButton.titleLabel?.font = UIFont.systemFont(ofSize: 24, weight: .medium)
         startStopButton.addTarget(self, action: #selector(startStop), for: .touchUpInside)
 
-        self.view.addSubview(startStopButton)
+        view.addSubview(startStopButton)
+        startStopButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            startStopButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            startStopButton.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            startStopButton.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+        ])
         
-        startStopButton.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
-        startStopButton.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
-        startStopButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        startStopButton.heightAnchor.constraint(equalToConstant: 130).isActive = true
+        //Constraints responsible for squishing the button height down as necessary
+        let c1 = startStopButton.topAnchor.constraint(greaterThanOrEqualTo: lapResetButton.bottomAnchor, constant: 20)
+        c1.priority = .defaultHigh
+        c1.isActive = true
+        let c2 = startStopButton.heightAnchor.constraint(equalToConstant: 200)
+        c2.priority = .defaultHigh
+        c2.isActive = true
+        let c3 = startStopButton.heightAnchor.constraint(lessThanOrEqualToConstant: 200)
+        c3.priority = .defaultLow
+        c3.isActive = true
     }
     
     @objc func unitsChanged(sender: UISegmentedControl) {
@@ -177,7 +210,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @objc func lapOptionChanged(sender: UISegmentedControl) {
         UserDefaults.standard.set(sender.selectedSegmentIndex, forKey: "lapIndex")
         
-        tableView.reloadData()
+        lapsTableView.reloadData()
     }
     
     @objc func startStop(sender: UIButton!) {
@@ -202,37 +235,41 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func reset() {
-        secondsLabel.text = "0.000000"
-        timeLabel.text = "00:00:00"
+        secondaryTimeLabel.text = "0.000000"
+        primaryTimeLabel.text = "00:00:00"
         
         lapResetButton.isHidden = true
         lapResetButton.setTitle("Add Lap", for: .normal)
         
         lapsTotal.removeAll()
-        lapsPrev.removeAll()
         
-        tableView.reloadData()
+        UIView.animate(withDuration: 0.3, animations: {
+            self.lapsTableView.alpha = 0.0
+            self.lapSegment.alpha = 0.0
+        })
+        
+        lapsTableView.reloadData()
     }
     
     func addLap() {
+        if !isLapViewVisible {
+            UIView.animate(withDuration: 0.3, animations: {
+                self.lapsTableView.alpha = 1.0
+                self.lapSegment.alpha = 1.0
+            })
+        }
+        
         let time = getCurrentTime()
         lapsTotal.insert(time, at: 0)
         
-        
-        
-        let timeDiff = time - prevTime
-        lapsPrev.insert(timeDiff, at: 0)
-        prevTime = time
-        
-        tableView.reloadData()
+        lapsTableView.reloadData()
     }
     
     func start() {
         UserDefaults.standard.set(true, forKey: "isRunning")
         
-        if secondsLabel.text == "0.000000" {
+        if secondaryTimeLabel.text == "0.000000" {
             methodStart = Date()
-            prevTime = 0
         } else {
             methodStart = Date().addingTimeInterval(-1 * exTime)
         }
@@ -257,16 +294,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func updateLabelsForSeconds(time: Double) {
         if (unitType == unitTypes.seconds){
-            secondsLabel.text = String(format: "%f", time)
+            secondaryTimeLabel.text = String(format: "%f", time)
         } else if (unitType == unitTypes.minutes){
-            secondsLabel.text = String(format: "%f", time / 60)
+            secondaryTimeLabel.text = String(format: "%f", time / 60)
         } else if (unitType == unitTypes.hours){
-            secondsLabel.text = String(format: "%f", time / 3600)
+            secondaryTimeLabel.text = String(format: "%f", time / 3600)
         }
         
         let (hours, minutes, seconds) = secondsToHoursMinutesSeconds(seconds: Int(time))
         
-        timeLabel.text = String(format: "%02i:%02i:%02i", hours, minutes, seconds)
+        primaryTimeLabel.text = String(format: "%02i:%02i:%02i", hours, minutes, seconds)
     }
     
     func secondsToHoursMinutesSeconds (seconds : Int) -> (Int, Int, Int) {
@@ -290,10 +327,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         buildView()
     }
-    
-    // MARK: Table Stuff
-    // MARK: -
-    
+}
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lapsTotal.count
     }
@@ -305,24 +341,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath)
         
-        var lapString = NSMutableAttributedString()
         let lapIndex = UserDefaults.standard.integer(forKey: "lapIndex")
+        var time: Double
         
         if (lapIndex == 0) {
-            let time = lapsTotal[indexPath.row]
-            
-            let seconds = time.truncatingRemainder(dividingBy: 60.0)
-            let minutes: Int = (Int(time) / 60) % 60
-            
-            lapString = NSMutableAttributedString(string: String(format: "%02i.   %02i:%05.2f", lapsTotal.count - (indexPath.row), minutes, seconds))
+            time = lapsTotal[indexPath.row]
         } else{
-            let time = lapsPrev[indexPath.row]
-            
-            let seconds = time.truncatingRemainder(dividingBy: 60.0)
-            let minutes: Int = (Int(time) / 60) % 60
-            
-            lapString = NSMutableAttributedString(string: String(format: "%02i.   %02i:%05.2f", lapsPrev.count - (indexPath.row), minutes, seconds))
+            if indexPath.row < (lapsTotal.count - 1) {
+                time = lapsTotal[indexPath.row] - lapsTotal[indexPath.row + 1]
+            } else {
+                time = lapsTotal[indexPath.row]
+            }
         }
+        
+        let seconds = time.truncatingRemainder(dividingBy: 60.0)
+        let minutes: Int = (Int(time) / 60) % 60
+        
+        let lapString = NSMutableAttributedString(string: String(format: "%02i.   %02i:%05.2f", lapsTotal.count - (indexPath.row), minutes, seconds))
+        
+        
         
         let millisecondsRange = NSRange(location: (lapString.length) - 3, length: 3)
         let millisecondsColor = [ NSAttributedString.Key.foregroundColor: UIColor.secondaryLabel ]
@@ -333,6 +370,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let lapFont = [ NSAttributedString.Key.font: UIFont.monospacedDigitSystemFont(ofSize: 16, weight: .heavy) ]
         lapString.addAttributes(lapColor, range: lapRange)
         lapString.addAttributes(lapFont, range: lapRange)
+        
+        
         
         cell.textLabel?.textColor = UIColor.label
         cell.textLabel!.font = UIFont.monospacedDigitSystemFont(ofSize: 16, weight: .regular)
