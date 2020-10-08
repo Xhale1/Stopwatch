@@ -7,258 +7,267 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A50D703719F3329E0066AA16 /* Black.png in Resources */ = {isa = PBXBuildFile; fileRef = A50D703619F3329E0066AA16 /* Black.png */; };
-		A50D703A19F333600066AA16 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = A50D703919F333600066AA16 /* Settings.m */; };
-		A50D704019F357120066AA16 /* BlueBG.png in Resources */ = {isa = PBXBuildFile; fileRef = A50D703F19F357120066AA16 /* BlueBG.png */; };
-		A50D704419F35AC30066AA16 /* GoldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = A50D704319F35AC30066AA16 /* GoldBG.png */; };
-		A50D704619F35B190066AA16 /* MetalBG.png in Resources */ = {isa = PBXBuildFile; fileRef = A50D704519F35B190066AA16 /* MetalBG.png */; };
-		A51FEDCC19B0E3500002D63A /* NewBox.png in Resources */ = {isa = PBXBuildFile; fileRef = A51FEDCB19B0E3500002D63A /* NewBox.png */; };
-		A51FEDD019B181500002D63A /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = A51FEDCF19B181500002D63A /* BG.png */; };
-		A51FEDD219B181BF0002D63A /* Clock.png in Resources */ = {isa = PBXBuildFile; fileRef = A51FEDD119B181BF0002D63A /* Clock.png */; };
-		A5336EFC19F32B2400FF0D3B /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = A5336EFB19F32B2400FF0D3B /* Button.png */; };
-		A550A67219B815930079BA84 /* StopWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = A550A67119B815930079BA84 /* StopWatch.m */; };
-		A55EE47919F827D800F15057 /* GreenBG3.png in Resources */ = {isa = PBXBuildFile; fileRef = A55EE47819F827D800F15057 /* GreenBG3.png */; };
-		A58D9DF619F873F300F50343 /* BlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A58D9DF519F873F300F50343 /* BlueButton.png */; };
-		A5CD776C19B01F5800FD357B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CD776B19B01F5800FD357B /* Foundation.framework */; };
-		A5CD776E19B01F5800FD357B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CD776D19B01F5800FD357B /* CoreGraphics.framework */; };
-		A5CD777019B01F5800FD357B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CD776F19B01F5800FD357B /* UIKit.framework */; };
-		A5CD777619B01F5800FD357B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5CD777419B01F5800FD357B /* InfoPlist.strings */; };
-		A5CD777819B01F5800FD357B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CD777719B01F5800FD357B /* main.m */; };
-		A5CD777C19B01F5800FD357B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CD777B19B01F5800FD357B /* AppDelegate.m */; };
-		A5CD777F19B01F5800FD357B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CD777D19B01F5800FD357B /* Main_iPhone.storyboard */; };
-		A5CD778219B01F5900FD357B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CD778019B01F5900FD357B /* Main_iPad.storyboard */; };
-		A5CD778519B01F5900FD357B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CD778419B01F5900FD357B /* ViewController.m */; };
-		A5CD778719B01F5900FD357B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5CD778619B01F5900FD357B /* Images.xcassets */; };
-		A5CD778E19B01F5900FD357B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CD778D19B01F5900FD357B /* XCTest.framework */; };
-		A5CD778F19B01F5900FD357B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CD776B19B01F5800FD357B /* Foundation.framework */; };
-		A5CD779019B01F5900FD357B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CD776F19B01F5800FD357B /* UIKit.framework */; };
-		A5CD779819B01F5900FD357B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5CD779619B01F5900FD357B /* InfoPlist.strings */; };
-		A5CD779A19B01F5900FD357B /* StopwatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CD779919B01F5900FD357B /* StopwatchTests.m */; };
-		A5CD77A419B034DC00FD357B /* GrayBG.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CD77A319B034DC00FD357B /* GrayBG.png */; };
-		A5CD77A619B034E700FD357B /* GoldButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CD77A519B034E700FD357B /* GoldButton.png */; };
-		A5CD77A819B0382000FD357B /* Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = A5CD77A719B0381F00FD357B /* Screen.png */; };
-		A5E5C93A19B926A1002737D5 /* Main_iPhone_3.5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E5C93919B926A1002737D5 /* Main_iPhone_3.5.storyboard */; };
+		A54894191E1F2203007B3466 /* WatchStopLogoHiRes.png in Resources */ = {isa = PBXBuildFile; fileRef = A54894181E1F2203007B3466 /* WatchStopLogoHiRes.png */; };
+		A554763A1E161C460027F6F0 /* Background_Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = A55476361E161C460027F6F0 /* Background_Blue.png */; };
+		A554763B1E161C460027F6F0 /* Background_Green.png in Resources */ = {isa = PBXBuildFile; fileRef = A55476371E161C460027F6F0 /* Background_Green.png */; };
+		A554763E1E161C8F0027F6F0 /* MainSpace.png in Resources */ = {isa = PBXBuildFile; fileRef = A554763D1E161C8F0027F6F0 /* MainSpace.png */; };
+		A55476421E161FE30027F6F0 /* Background_Pink.png in Resources */ = {isa = PBXBuildFile; fileRef = A55476401E161FE30027F6F0 /* Background_Pink.png */; };
+		A55476481E16387A0027F6F0 /* WideButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A55476471E16387A0027F6F0 /* WideButton.png */; };
+		A596EC871E16540B00138F00 /* BlueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A596EC841E16540B00138F00 /* BlueButton.png */; };
+		A596EC881E16540B00138F00 /* PinkButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A596EC851E16540B00138F00 /* PinkButton.png */; };
+		A596EC891E16540B00138F00 /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A596EC861E16540B00138F00 /* GreenButton.png */; };
+		A5A732421E09B27E002C08EC /* ModernButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A7323D1E09B27E002C08EC /* ModernButton.png */; };
+		A5A732431E09B27E002C08EC /* WatchStopLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A7323E1E09B27E002C08EC /* WatchStopLogo.png */; };
+		A5A732451E09B3DF002C08EC /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5A732441E09B3B2002C08EC /* SourceSansPro-Regular.otf */; };
+		A5A732471E09E9B6002C08EC /* ModernButtonHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A732461E09E9B6002C08EC /* ModernButtonHighlight.png */; };
+		A5A7324F1E09ED83002C08EC /* InfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A7324E1E09ED83002C08EC /* InfoController.m */; };
+		A5A732511E0B5530002C08EC /* MainIPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A732501E0B5530002C08EC /* MainIPad.storyboard */; };
+		A5DEA4B71CD9117D00616D94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA4B61CD9117D00616D94 /* main.m */; };
+		A5DEA4BA1CD9117D00616D94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA4B91CD9117D00616D94 /* AppDelegate.m */; };
+		A5DEA4BD1CD9117D00616D94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA4BC1CD9117D00616D94 /* ViewController.m */; };
+		A5DEA4C01CD9117D00616D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DEA4BE1CD9117D00616D94 /* Main.storyboard */; };
+		A5DEA4C21CD9117D00616D94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5DEA4C11CD9117D00616D94 /* Assets.xcassets */; };
+		A5DEA4D01CD9117D00616D94 /* WatchStopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA4CF1CD9117D00616D94 /* WatchStopTests.m */; };
+		A5DEA4DB1CD9117D00616D94 /* WatchStopUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA4DA1CD9117D00616D94 /* WatchStopUITests.m */; };
+		A5DEA5031CD97A5E00616D94 /* DroidSansMono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5DEA5021CD97A4500616D94 /* DroidSansMono.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A5CD779119B01F5900FD357B /* PBXContainerItemProxy */ = {
+		A5DEA4CC1CD9117D00616D94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A5CD776019B01F5800FD357B /* Project object */;
+			containerPortal = A5DEA4AA1CD9117D00616D94 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A5CD776719B01F5800FD357B;
-			remoteInfo = Stopwatch;
+			remoteGlobalIDString = A5DEA4B11CD9117D00616D94;
+			remoteInfo = WatchStop;
+		};
+		A5DEA4D71CD9117D00616D94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5DEA4AA1CD9117D00616D94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5DEA4B11CD9117D00616D94;
+			remoteInfo = WatchStop;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A50D703619F3329E0066AA16 /* Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black.png; sourceTree = "<group>"; };
-		A50D703819F333600066AA16 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
-		A50D703919F333600066AA16 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
-		A50D703F19F357120066AA16 /* BlueBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueBG.png; sourceTree = "<group>"; };
-		A50D704319F35AC30066AA16 /* GoldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoldBG.png; sourceTree = "<group>"; };
-		A50D704519F35B190066AA16 /* MetalBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MetalBG.png; sourceTree = "<group>"; };
-		A51FEDCB19B0E3500002D63A /* NewBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewBox.png; sourceTree = "<group>"; };
-		A51FEDCF19B181500002D63A /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
-		A51FEDD119B181BF0002D63A /* Clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clock.png; sourceTree = "<group>"; };
-		A5336EFB19F32B2400FF0D3B /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
-		A550A67019B815930079BA84 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
-		A550A67119B815930079BA84 /* StopWatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopWatch.m; sourceTree = "<group>"; };
-		A55EE47819F827D800F15057 /* GreenBG3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenBG3.png; sourceTree = "<group>"; };
-		A58D9DF519F873F300F50343 /* BlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueButton.png; sourceTree = "<group>"; };
-		A5CD776819B01F5800FD357B /* WatchStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5CD776B19B01F5800FD357B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A5CD776D19B01F5800FD357B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A5CD776F19B01F5800FD357B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A5CD777319B01F5800FD357B /* Stopwatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stopwatch-Info.plist"; sourceTree = "<group>"; };
-		A5CD777519B01F5800FD357B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A5CD777719B01F5800FD357B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A5CD777919B01F5800FD357B /* Stopwatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stopwatch-Prefix.pch"; sourceTree = "<group>"; };
-		A5CD777A19B01F5800FD357B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A5CD777B19B01F5800FD357B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A5CD777E19B01F5800FD357B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		A5CD778119B01F5900FD357B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		A5CD778319B01F5900FD357B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A5CD778419B01F5900FD357B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A5CD778619B01F5900FD357B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A5CD778C19B01F5900FD357B /* StopwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5CD778D19B01F5900FD357B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A5CD779519B01F5900FD357B /* StopwatchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StopwatchTests-Info.plist"; sourceTree = "<group>"; };
-		A5CD779719B01F5900FD357B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A5CD779919B01F5900FD357B /* StopwatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StopwatchTests.m; sourceTree = "<group>"; };
-		A5CD77A319B034DC00FD357B /* GrayBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GrayBG.png; sourceTree = "<group>"; };
-		A5CD77A519B034E700FD357B /* GoldButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoldButton.png; sourceTree = "<group>"; };
-		A5CD77A719B0381F00FD357B /* Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen.png; sourceTree = "<group>"; };
-		A5E5C93919B926A1002737D5 /* Main_iPhone_3.5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone_3.5.storyboard; sourceTree = "<group>"; };
+		A54894181E1F2203007B3466 /* WatchStopLogoHiRes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WatchStopLogoHiRes.png; sourceTree = "<group>"; };
+		A55476361E161C460027F6F0 /* Background_Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_Blue.png; sourceTree = "<group>"; };
+		A55476371E161C460027F6F0 /* Background_Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_Green.png; sourceTree = "<group>"; };
+		A554763D1E161C8F0027F6F0 /* MainSpace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainSpace.png; sourceTree = "<group>"; };
+		A55476401E161FE30027F6F0 /* Background_Pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_Pink.png; sourceTree = "<group>"; };
+		A55476471E16387A0027F6F0 /* WideButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WideButton.png; sourceTree = "<group>"; };
+		A596EC841E16540B00138F00 /* BlueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueButton.png; sourceTree = "<group>"; };
+		A596EC851E16540B00138F00 /* PinkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinkButton.png; sourceTree = "<group>"; };
+		A596EC861E16540B00138F00 /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenButton.png; sourceTree = "<group>"; };
+		A5A7323D1E09B27E002C08EC /* ModernButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ModernButton.png; sourceTree = "<group>"; };
+		A5A7323E1E09B27E002C08EC /* WatchStopLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WatchStopLogo.png; sourceTree = "<group>"; };
+		A5A732441E09B3B2002C08EC /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.otf"; sourceTree = "<group>"; };
+		A5A732461E09E9B6002C08EC /* ModernButtonHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ModernButtonHighlight.png; sourceTree = "<group>"; };
+		A5A7324D1E09ED83002C08EC /* InfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoController.h; path = ../InfoController.h; sourceTree = "<group>"; };
+		A5A7324E1E09ED83002C08EC /* InfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoController.m; path = ../InfoController.m; sourceTree = "<group>"; };
+		A5A732501E0B5530002C08EC /* MainIPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainIPad.storyboard; sourceTree = "<group>"; };
+		A5DEA4B21CD9117D00616D94 /* WatchStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DEA4B61CD9117D00616D94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5DEA4B81CD9117D00616D94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A5DEA4B91CD9117D00616D94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A5DEA4BB1CD9117D00616D94 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A5DEA4BC1CD9117D00616D94 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A5DEA4BF1CD9117D00616D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5DEA4C11CD9117D00616D94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5DEA4C61CD9117D00616D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DEA4CB1CD9117D00616D94 /* WatchStopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchStopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DEA4CF1CD9117D00616D94 /* WatchStopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchStopTests.m; sourceTree = "<group>"; };
+		A5DEA4D11CD9117D00616D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DEA4D61CD9117D00616D94 /* WatchStopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchStopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DEA4DA1CD9117D00616D94 /* WatchStopUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchStopUITests.m; sourceTree = "<group>"; };
+		A5DEA4DC1CD9117D00616D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DEA5021CD97A4500616D94 /* DroidSansMono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DroidSansMono.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A5CD776519B01F5800FD357B /* Frameworks */ = {
+		A5DEA4AF1CD9117D00616D94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5CD776E19B01F5800FD357B /* CoreGraphics.framework in Frameworks */,
-				A5CD777019B01F5800FD357B /* UIKit.framework in Frameworks */,
-				A5CD776C19B01F5800FD357B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5CD778919B01F5900FD357B /* Frameworks */ = {
+		A5DEA4C81CD9117D00616D94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5CD778E19B01F5900FD357B /* XCTest.framework in Frameworks */,
-				A5CD779019B01F5900FD357B /* UIKit.framework in Frameworks */,
-				A5CD778F19B01F5900FD357B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DEA4D31CD9117D00616D94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A5CD775F19B01F5800FD357B = {
+		A5DEA4A91CD9117D00616D94 = {
 			isa = PBXGroup;
 			children = (
-				A5CD777119B01F5800FD357B /* Stopwatch */,
-				A5CD779319B01F5900FD357B /* StopwatchTests */,
-				A5CD776A19B01F5800FD357B /* Frameworks */,
-				A5CD776919B01F5800FD357B /* Products */,
+				A5DEA4B41CD9117D00616D94 /* WatchStop */,
+				A5DEA4CE1CD9117D00616D94 /* WatchStopTests */,
+				A5DEA4D91CD9117D00616D94 /* WatchStopUITests */,
+				A5DEA4B31CD9117D00616D94 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A5CD776919B01F5800FD357B /* Products */ = {
+		A5DEA4B31CD9117D00616D94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5CD776819B01F5800FD357B /* WatchStop.app */,
-				A5CD778C19B01F5900FD357B /* StopwatchTests.xctest */,
+				A5DEA4B21CD9117D00616D94 /* WatchStop.app */,
+				A5DEA4CB1CD9117D00616D94 /* WatchStopTests.xctest */,
+				A5DEA4D61CD9117D00616D94 /* WatchStopUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A5CD776A19B01F5800FD357B /* Frameworks */ = {
+		A5DEA4B41CD9117D00616D94 /* WatchStop */ = {
 			isa = PBXGroup;
 			children = (
-				A5CD776B19B01F5800FD357B /* Foundation.framework */,
-				A5CD776D19B01F5800FD357B /* CoreGraphics.framework */,
-				A5CD776F19B01F5800FD357B /* UIKit.framework */,
-				A5CD778D19B01F5900FD357B /* XCTest.framework */,
+				A5DEA4B81CD9117D00616D94 /* AppDelegate.h */,
+				A5DEA4B91CD9117D00616D94 /* AppDelegate.m */,
+				A5DEA4BB1CD9117D00616D94 /* ViewController.h */,
+				A5DEA4BC1CD9117D00616D94 /* ViewController.m */,
+				A5A7324D1E09ED83002C08EC /* InfoController.h */,
+				A5A7324E1E09ED83002C08EC /* InfoController.m */,
+				A5A732501E0B5530002C08EC /* MainIPad.storyboard */,
+				A5DEA4BE1CD9117D00616D94 /* Main.storyboard */,
+				A5DEA4C11CD9117D00616D94 /* Assets.xcassets */,
+				A5DEA4C61CD9117D00616D94 /* Info.plist */,
+				A5DEA4B51CD9117D00616D94 /* Supporting Files */,
 			);
-			name = Frameworks;
+			path = WatchStop;
 			sourceTree = "<group>";
 		};
-		A5CD777119B01F5800FD357B /* Stopwatch */ = {
+		A5DEA4B51CD9117D00616D94 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A5CD777A19B01F5800FD357B /* AppDelegate.h */,
-				A5CD777B19B01F5800FD357B /* AppDelegate.m */,
-				A5CD777D19B01F5800FD357B /* Main_iPhone.storyboard */,
-				A5E5C93919B926A1002737D5 /* Main_iPhone_3.5.storyboard */,
-				A5CD778019B01F5900FD357B /* Main_iPad.storyboard */,
-				A5CD778319B01F5900FD357B /* ViewController.h */,
-				A5CD778419B01F5900FD357B /* ViewController.m */,
-				A550A67019B815930079BA84 /* StopWatch.h */,
-				A550A67119B815930079BA84 /* StopWatch.m */,
-				A50D703819F333600066AA16 /* Settings.h */,
-				A50D703919F333600066AA16 /* Settings.m */,
-				A5CD778619B01F5900FD357B /* Images.xcassets */,
-				A5CD777219B01F5800FD357B /* Supporting Files */,
-			);
-			path = Stopwatch;
-			sourceTree = "<group>";
-		};
-		A5CD777219B01F5800FD357B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A58D9DF519F873F300F50343 /* BlueButton.png */,
-				A55EE47819F827D800F15057 /* GreenBG3.png */,
-				A50D704519F35B190066AA16 /* MetalBG.png */,
-				A50D704319F35AC30066AA16 /* GoldBG.png */,
-				A50D703F19F357120066AA16 /* BlueBG.png */,
-				A51FEDCF19B181500002D63A /* BG.png */,
-				A50D703619F3329E0066AA16 /* Black.png */,
-				A51FEDD119B181BF0002D63A /* Clock.png */,
-				A51FEDCB19B0E3500002D63A /* NewBox.png */,
-				A5CD77A719B0381F00FD357B /* Screen.png */,
-				A5CD77A319B034DC00FD357B /* GrayBG.png */,
-				A5CD77A519B034E700FD357B /* GoldButton.png */,
-				A5336EFB19F32B2400FF0D3B /* Button.png */,
-				A5CD777319B01F5800FD357B /* Stopwatch-Info.plist */,
-				A5CD777419B01F5800FD357B /* InfoPlist.strings */,
-				A5CD777719B01F5800FD357B /* main.m */,
-				A5CD777919B01F5800FD357B /* Stopwatch-Prefix.pch */,
+				A5DEA5021CD97A4500616D94 /* DroidSansMono.ttf */,
+				A5A732441E09B3B2002C08EC /* SourceSansPro-Regular.otf */,
+				A5A7323D1E09B27E002C08EC /* ModernButton.png */,
+				A5A732461E09E9B6002C08EC /* ModernButtonHighlight.png */,
+				A5A7323E1E09B27E002C08EC /* WatchStopLogo.png */,
+				A54894181E1F2203007B3466 /* WatchStopLogoHiRes.png */,
+				A55476361E161C460027F6F0 /* Background_Blue.png */,
+				A55476371E161C460027F6F0 /* Background_Green.png */,
+				A55476401E161FE30027F6F0 /* Background_Pink.png */,
+				A554763D1E161C8F0027F6F0 /* MainSpace.png */,
+				A55476471E16387A0027F6F0 /* WideButton.png */,
+				A596EC841E16540B00138F00 /* BlueButton.png */,
+				A596EC851E16540B00138F00 /* PinkButton.png */,
+				A596EC861E16540B00138F00 /* GreenButton.png */,
+				A5DEA4B61CD9117D00616D94 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A5CD779319B01F5900FD357B /* StopwatchTests */ = {
+		A5DEA4CE1CD9117D00616D94 /* WatchStopTests */ = {
 			isa = PBXGroup;
 			children = (
-				A5CD779919B01F5900FD357B /* StopwatchTests.m */,
-				A5CD779419B01F5900FD357B /* Supporting Files */,
+				A5DEA4CF1CD9117D00616D94 /* WatchStopTests.m */,
+				A5DEA4D11CD9117D00616D94 /* Info.plist */,
 			);
-			path = StopwatchTests;
+			path = WatchStopTests;
 			sourceTree = "<group>";
 		};
-		A5CD779419B01F5900FD357B /* Supporting Files */ = {
+		A5DEA4D91CD9117D00616D94 /* WatchStopUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A5CD779519B01F5900FD357B /* StopwatchTests-Info.plist */,
-				A5CD779619B01F5900FD357B /* InfoPlist.strings */,
+				A5DEA4DA1CD9117D00616D94 /* WatchStopUITests.m */,
+				A5DEA4DC1CD9117D00616D94 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = WatchStopUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A5CD776719B01F5800FD357B /* Stopwatch */ = {
+		A5DEA4B11CD9117D00616D94 /* WatchStop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5CD779D19B01F5900FD357B /* Build configuration list for PBXNativeTarget "Stopwatch" */;
+			buildConfigurationList = A5DEA4DF1CD9117D00616D94 /* Build configuration list for PBXNativeTarget "WatchStop" */;
 			buildPhases = (
-				A5CD776419B01F5800FD357B /* Sources */,
-				A5CD776519B01F5800FD357B /* Frameworks */,
-				A5CD776619B01F5800FD357B /* Resources */,
+				A5DEA4AE1CD9117D00616D94 /* Sources */,
+				A5DEA4AF1CD9117D00616D94 /* Frameworks */,
+				A5DEA4B01CD9117D00616D94 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Stopwatch;
-			productName = Stopwatch;
-			productReference = A5CD776819B01F5800FD357B /* WatchStop.app */;
+			name = WatchStop;
+			productName = WatchStop;
+			productReference = A5DEA4B21CD9117D00616D94 /* WatchStop.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A5CD778B19B01F5900FD357B /* StopwatchTests */ = {
+		A5DEA4CA1CD9117D00616D94 /* WatchStopTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5CD77A019B01F5900FD357B /* Build configuration list for PBXNativeTarget "StopwatchTests" */;
+			buildConfigurationList = A5DEA4E21CD9117D00616D94 /* Build configuration list for PBXNativeTarget "WatchStopTests" */;
 			buildPhases = (
-				A5CD778819B01F5900FD357B /* Sources */,
-				A5CD778919B01F5900FD357B /* Frameworks */,
-				A5CD778A19B01F5900FD357B /* Resources */,
+				A5DEA4C71CD9117D00616D94 /* Sources */,
+				A5DEA4C81CD9117D00616D94 /* Frameworks */,
+				A5DEA4C91CD9117D00616D94 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A5CD779219B01F5900FD357B /* PBXTargetDependency */,
+				A5DEA4CD1CD9117D00616D94 /* PBXTargetDependency */,
 			);
-			name = StopwatchTests;
-			productName = StopwatchTests;
-			productReference = A5CD778C19B01F5900FD357B /* StopwatchTests.xctest */;
+			name = WatchStopTests;
+			productName = WatchStopTests;
+			productReference = A5DEA4CB1CD9117D00616D94 /* WatchStopTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5DEA4D51CD9117D00616D94 /* WatchStopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5DEA4E51CD9117D00616D94 /* Build configuration list for PBXNativeTarget "WatchStopUITests" */;
+			buildPhases = (
+				A5DEA4D21CD9117D00616D94 /* Sources */,
+				A5DEA4D31CD9117D00616D94 /* Frameworks */,
+				A5DEA4D41CD9117D00616D94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5DEA4D81CD9117D00616D94 /* PBXTargetDependency */,
+			);
+			name = WatchStopUITests;
+			productName = WatchStopUITests;
+			productReference = A5DEA4D61CD9117D00616D94 /* WatchStopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A5CD776019B01F5800FD357B /* Project object */ = {
+		A5DEA4AA1CD9117D00616D94 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Reece Carolan";
 				TargetAttributes = {
-					A5CD778B19B01F5900FD357B = {
-						TestTargetID = A5CD776719B01F5800FD357B;
+					A5DEA4B11CD9117D00616D94 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 379S5SB732;
+						ProvisioningStyle = Automatic;
+					};
+					A5DEA4CA1CD9117D00616D94 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A5DEA4B11CD9117D00616D94;
+					};
+					A5DEA4D51CD9117D00616D94 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A5DEA4B11CD9117D00616D94;
 					};
 				};
 			};
-			buildConfigurationList = A5CD776319B01F5800FD357B /* Build configuration list for PBXProject "WatchStop" */;
+			buildConfigurationList = A5DEA4AD1CD9117D00616D94 /* Build configuration list for PBXProject "WatchStop" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -266,293 +275,344 @@
 				en,
 				Base,
 			);
-			mainGroup = A5CD775F19B01F5800FD357B;
-			productRefGroup = A5CD776919B01F5800FD357B /* Products */;
+			mainGroup = A5DEA4A91CD9117D00616D94;
+			productRefGroup = A5DEA4B31CD9117D00616D94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5CD776719B01F5800FD357B /* Stopwatch */,
-				A5CD778B19B01F5900FD357B /* StopwatchTests */,
+				A5DEA4B11CD9117D00616D94 /* WatchStop */,
+				A5DEA4CA1CD9117D00616D94 /* WatchStopTests */,
+				A5DEA4D51CD9117D00616D94 /* WatchStopUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A5CD776619B01F5800FD357B /* Resources */ = {
+		A5DEA4B01CD9117D00616D94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A50D704619F35B190066AA16 /* MetalBG.png in Resources */,
-				A51FEDD019B181500002D63A /* BG.png in Resources */,
-				A51FEDCC19B0E3500002D63A /* NewBox.png in Resources */,
-				A5CD77A419B034DC00FD357B /* GrayBG.png in Resources */,
-				A5CD77A819B0382000FD357B /* Screen.png in Resources */,
-				A5E5C93A19B926A1002737D5 /* Main_iPhone_3.5.storyboard in Resources */,
-				A50D703719F3329E0066AA16 /* Black.png in Resources */,
-				A5CD77A619B034E700FD357B /* GoldButton.png in Resources */,
-				A50D704019F357120066AA16 /* BlueBG.png in Resources */,
-				A5336EFC19F32B2400FF0D3B /* Button.png in Resources */,
-				A5CD778219B01F5900FD357B /* Main_iPad.storyboard in Resources */,
-				A55EE47919F827D800F15057 /* GreenBG3.png in Resources */,
-				A5CD778719B01F5900FD357B /* Images.xcassets in Resources */,
-				A5CD777F19B01F5800FD357B /* Main_iPhone.storyboard in Resources */,
-				A58D9DF619F873F300F50343 /* BlueButton.png in Resources */,
-				A50D704419F35AC30066AA16 /* GoldBG.png in Resources */,
-				A51FEDD219B181BF0002D63A /* Clock.png in Resources */,
-				A5CD777619B01F5800FD357B /* InfoPlist.strings in Resources */,
+				A5A732451E09B3DF002C08EC /* SourceSansPro-Regular.otf in Resources */,
+				A5DEA5031CD97A5E00616D94 /* DroidSansMono.ttf in Resources */,
+				A55476481E16387A0027F6F0 /* WideButton.png in Resources */,
+				A54894191E1F2203007B3466 /* WatchStopLogoHiRes.png in Resources */,
+				A5A732421E09B27E002C08EC /* ModernButton.png in Resources */,
+				A55476421E161FE30027F6F0 /* Background_Pink.png in Resources */,
+				A596EC871E16540B00138F00 /* BlueButton.png in Resources */,
+				A5A732511E0B5530002C08EC /* MainIPad.storyboard in Resources */,
+				A554763A1E161C460027F6F0 /* Background_Blue.png in Resources */,
+				A596EC891E16540B00138F00 /* GreenButton.png in Resources */,
+				A5A732471E09E9B6002C08EC /* ModernButtonHighlight.png in Resources */,
+				A5DEA4C21CD9117D00616D94 /* Assets.xcassets in Resources */,
+				A5DEA4C01CD9117D00616D94 /* Main.storyboard in Resources */,
+				A554763B1E161C460027F6F0 /* Background_Green.png in Resources */,
+				A554763E1E161C8F0027F6F0 /* MainSpace.png in Resources */,
+				A5A732431E09B27E002C08EC /* WatchStopLogo.png in Resources */,
+				A596EC881E16540B00138F00 /* PinkButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5CD778A19B01F5900FD357B /* Resources */ = {
+		A5DEA4C91CD9117D00616D94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5CD779819B01F5900FD357B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DEA4D41CD9117D00616D94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A5CD776419B01F5800FD357B /* Sources */ = {
+		A5DEA4AE1CD9117D00616D94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5CD778519B01F5900FD357B /* ViewController.m in Sources */,
-				A5CD777C19B01F5800FD357B /* AppDelegate.m in Sources */,
-				A50D703A19F333600066AA16 /* Settings.m in Sources */,
-				A5CD777819B01F5800FD357B /* main.m in Sources */,
-				A550A67219B815930079BA84 /* StopWatch.m in Sources */,
+				A5DEA4BD1CD9117D00616D94 /* ViewController.m in Sources */,
+				A5DEA4BA1CD9117D00616D94 /* AppDelegate.m in Sources */,
+				A5DEA4B71CD9117D00616D94 /* main.m in Sources */,
+				A5A7324F1E09ED83002C08EC /* InfoController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5CD778819B01F5900FD357B /* Sources */ = {
+		A5DEA4C71CD9117D00616D94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5CD779A19B01F5900FD357B /* StopwatchTests.m in Sources */,
+				A5DEA4D01CD9117D00616D94 /* WatchStopTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DEA4D21CD9117D00616D94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DEA4DB1CD9117D00616D94 /* WatchStopUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A5CD779219B01F5900FD357B /* PBXTargetDependency */ = {
+		A5DEA4CD1CD9117D00616D94 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A5CD776719B01F5800FD357B /* Stopwatch */;
-			targetProxy = A5CD779119B01F5900FD357B /* PBXContainerItemProxy */;
+			target = A5DEA4B11CD9117D00616D94 /* WatchStop */;
+			targetProxy = A5DEA4CC1CD9117D00616D94 /* PBXContainerItemProxy */;
+		};
+		A5DEA4D81CD9117D00616D94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5DEA4B11CD9117D00616D94 /* WatchStop */;
+			targetProxy = A5DEA4D71CD9117D00616D94 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A5CD777419B01F5800FD357B /* InfoPlist.strings */ = {
+		A5DEA4BE1CD9117D00616D94 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5CD777519B01F5800FD357B /* en */,
+				A5DEA4BF1CD9117D00616D94 /* Base */,
 			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A5CD777D19B01F5800FD357B /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5CD777E19B01F5800FD357B /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		A5CD778019B01F5900FD357B /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5CD778119B01F5900FD357B /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		A5CD779619B01F5900FD357B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5CD779719B01F5900FD357B /* en */,
-			);
-			name = InfoPlist.strings;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A5CD779B19B01F5900FD357B /* Debug */ = {
+		A5DEA4DD1CD9117D00616D94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A5CD779C19B01F5900FD357B /* Release */ = {
+		A5DEA4DE1CD9117D00616D94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		A5CD779E19B01F5900FD357B /* Debug */ = {
+		A5DEA4E01CD9117D00616D94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Brian Carolan (EQZKY7KEQ4)";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Stopwatch/Stopwatch-Prefix.pch";
-				INFOPLIST_FILE = "Stopwatch/Stopwatch-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = WatchStop;
-				WRAPPER_EXTENSION = app;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WatchStop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pangea.Stopwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A5CD779F19B01F5900FD357B /* Release */ = {
+		A5DEA4E11CD9117D00616D94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Brian Carolan (EQZKY7KEQ4)";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Stopwatch/Stopwatch-Prefix.pch";
-				INFOPLIST_FILE = "Stopwatch/Stopwatch-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = WatchStop;
-				WRAPPER_EXTENSION = app;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WatchStop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pangea.Stopwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		A5CD77A119B01F5900FD357B /* Debug */ = {
+		A5DEA4E31CD9117D00616D94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stopwatch.app/Stopwatch";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Stopwatch/Stopwatch-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "StopwatchTests/StopwatchTests-Info.plist";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WatchStopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pangeanapps.WatchStopTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchStop.app/WatchStop";
 			};
 			name = Debug;
 		};
-		A5CD77A219B01F5900FD357B /* Release */ = {
+		A5DEA4E41CD9117D00616D94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stopwatch.app/Stopwatch";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Stopwatch/Stopwatch-Prefix.pch";
-				INFOPLIST_FILE = "StopwatchTests/StopwatchTests-Info.plist";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WatchStopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pangeanapps.WatchStopTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchStop.app/WatchStop";
+			};
+			name = Release;
+		};
+		A5DEA4E61CD9117D00616D94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WatchStopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pangeanapps.WatchStopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WatchStop;
+			};
+			name = Debug;
+		};
+		A5DEA4E71CD9117D00616D94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WatchStopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pangeanapps.WatchStopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WatchStop;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A5CD776319B01F5800FD357B /* Build configuration list for PBXProject "WatchStop" */ = {
+		A5DEA4AD1CD9117D00616D94 /* Build configuration list for PBXProject "WatchStop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5CD779B19B01F5900FD357B /* Debug */,
-				A5CD779C19B01F5900FD357B /* Release */,
+				A5DEA4DD1CD9117D00616D94 /* Debug */,
+				A5DEA4DE1CD9117D00616D94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5CD779D19B01F5900FD357B /* Build configuration list for PBXNativeTarget "Stopwatch" */ = {
+		A5DEA4DF1CD9117D00616D94 /* Build configuration list for PBXNativeTarget "WatchStop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5CD779E19B01F5900FD357B /* Debug */,
-				A5CD779F19B01F5900FD357B /* Release */,
+				A5DEA4E01CD9117D00616D94 /* Debug */,
+				A5DEA4E11CD9117D00616D94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5CD77A019B01F5900FD357B /* Build configuration list for PBXNativeTarget "StopwatchTests" */ = {
+		A5DEA4E21CD9117D00616D94 /* Build configuration list for PBXNativeTarget "WatchStopTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5CD77A119B01F5900FD357B /* Debug */,
-				A5CD77A219B01F5900FD357B /* Release */,
+				A5DEA4E31CD9117D00616D94 /* Debug */,
+				A5DEA4E41CD9117D00616D94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5DEA4E51CD9117D00616D94 /* Build configuration list for PBXNativeTarget "WatchStopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5DEA4E61CD9117D00616D94 /* Debug */,
+				A5DEA4E71CD9117D00616D94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A5CD776019B01F5800FD357B /* Project object */;
+	rootObject = A5DEA4AA1CD9117D00616D94 /* Project object */;
 }
